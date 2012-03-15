@@ -1,5 +1,4 @@
 require 'test_helper'
-
 class ItemTest < ActiveSupport::TestCase
 
   test 'are entries saved' do

@@ -1,1 +1,4 @@
 A little Ap to see who has borrowed some of my stuff
+
+Built during the awesome Ruby on Rails from Scratch Workshop at Railslove University
+http://university.railslove.com
