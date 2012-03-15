@@ -1,12 +1,12 @@
 <h1>Listing items</h1>
-
+<%= link_to 'New Item', new_item_path %>
 <table>
   <tr>
     <th>Name</th>
     <th>Description</th>
 	<th>Rating</th>
+	<th>Location</th>
     <th>Borrower</th>
-    <th></th>
     <th></th>
   </tr>
 
@@ -15,7 +15,8 @@
     <td><%= item.name %></td>
     <td><%= item.description %></td>
     <td><%= item.rating %></td>
-	<td><%= item.borrower%></td>
+	<td><%= item.location_id %></td>
+	<td><%= item.borrower %></td>
     <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -23,6 +24,4 @@
 <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New Item', new_item_path %>

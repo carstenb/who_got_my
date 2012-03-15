@@ -7,4 +7,5 @@ class Item < ActiveRecord::Base
   
   scope :highest_rating, order("rating desc")
   scope :top5_rating, highest_rating.limit(5)
+  
 end
