@@ -1,7 +1,7 @@
 require 'test_helper'
 class ItemTest < ActiveSupport::TestCase
 
-  test 'are entries saved' do
+  test 'are valid entries saved' do
     item = items(:valid_item)
     assert item.valid?
   end
@@ -11,7 +11,7 @@ class ItemTest < ActiveSupport::TestCase
     assert item.invalid?
   end
   
-  test 'is rating in correct range' do
+  test 'is the rating in the correct range' do
     item = items(:valid_item)
     item.rating = 10
     refute item.save

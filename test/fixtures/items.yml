@@ -12,14 +12,12 @@ invalid_item:
   borrower: MyString
   rating: 6
   
-  
 rating_1:
   name: MyString
   description: MyText
   borrower: MyString
   rating: 1
     
-
 rating_2:
   name: MyString
   description: MyText
