@@ -1,0 +1,28 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+valid_item:
+  name: MyString
+  description: MyText
+  borrower: MyString
+  rating: 3
+
+invalid_item:
+  name: MyString
+  description: MyText
+  borrower: MyString
+  rating: 6
+  
+  
+rating_1:
+  name: MyString
+  description: MyText
+  borrower: MyString
+  rating: 1
+    
+
+rating_2:
+  name: MyString
+  description: MyText
+  borrower: MyString
+  rating: 2
+      
