@@ -1,0 +1,22 @@
+%h1 Listing items
+=link_to 'New Item', new_item_path
+%table
+  %tr
+    %th Name
+    %th Description
+    %th Rating
+    %th Location
+    %th Borrower
+    %th 
+    
+  -@items.each do |item|
+    %tr
+      %td=link_to item.name, item
+      %td=item.description
+      %td=item.rating
+      %td=item.location.title if item.location 
+      %td=item.borrower
+      %td=link_to 'Edit', edit_item_path(item)
+      %td=link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete
+
+
