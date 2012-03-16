@@ -80,4 +80,11 @@ class ItemsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def search
+  @result= Item.where("name LIKE ?","%#{params[:id]})
+  respond_to do |format|
+    format.json {render :json => @result}
+  end
+end
 end  
